@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>REGISTRATION FORM:</h3>
+    <button class="p">Register</button>
+    <button class="m">check details</button>
+    <script>
+        var btn=document.getElementsByClassName("p")
+        
+
+       btn[0].addEventListener("click",function(){
+        var a=prompt("enter Name")
+        var b=prompt("enter Password")
+        var c=prompt("enter Date of Birth")
+        var d=prompt("enter Mail")
+        var e=prompt("enter Mother Name")
+        window.localStorage.setItem("name",a)
+        window.localStorage.setItem("password",b)
+        window.localStorage.setItem("DOB",c)
+        window.localStorage.setItem("mail",d)
+        window.localStorage.setItem("mother name",e)
+    
+      
+       })
+       var btn1=document.getElementsByClassName("m")
+
+       btn1[0].addEventListener("click",one)
+      
+       function one(){
+        window.location.assign("./duplicate.html");
+       }
+    </script>
+</body>
+</html>
